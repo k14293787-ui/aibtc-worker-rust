@@ -6,4 +6,4 @@ RUN cargo build --release
 FROM debian:bookworm-slim
 RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /app/target/release/aibtc-rust /usr/local/bin/aibtc-rust
-CMD ["aibtc-rust", "0x8317166971a3D2B29f46Feb12cCF1Af701801a47"]
+CMD ["aibtc-rust", "0x3f81F760dc3f42D46A70C7707FA5A696567315A5"]
